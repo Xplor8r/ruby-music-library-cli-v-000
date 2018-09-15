@@ -47,7 +47,11 @@ class MusicLibraryController
       
       input = gets.strip
     end
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 1f38352d634a515d6be2af034d7c69befc68f983
   end 
   
   def list_songs
@@ -72,6 +76,7 @@ class MusicLibraryController
   end
   
   def list_songs_by_artist
+<<<<<<< HEAD
     puts "Please enter the name of an artist:"
     input = gets.strip
     if artist = Artist.find_by_name(input)
@@ -81,6 +86,9 @@ class MusicLibraryController
       end
     end
     
+=======
+    puts 
+>>>>>>> 1f38352d634a515d6be2af034d7c69befc68f983
   end
   
   def list_songs_by_genre
@@ -95,6 +103,7 @@ class MusicLibraryController
   end
   
   def play_song
+<<<<<<< HEAD
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     if input > 0 && input < Song.all.length
@@ -103,6 +112,14 @@ class MusicLibraryController
     if song
       puts "Playing #{song.name} by #{song.artist.name}"
     end
+=======
+
+    
+      
+    
+    
+
+>>>>>>> 1f38352d634a515d6be2af034d7c69befc68f983
   end
 
 end
